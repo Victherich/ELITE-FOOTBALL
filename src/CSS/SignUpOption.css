@@ -1,0 +1,53 @@
+.SignUpOptionWrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.SignUpOption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    margin-right: 5%;
+    margin-top: 5%;
+
+}
+
+.SignUpOptionButtonWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.SignUpOptionButtonWrap button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SignUpOption p {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:884px) {
+    .SignUpOption{
+        margin-top: 10%;
+    }
+}

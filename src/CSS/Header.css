@@ -1,0 +1,126 @@
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 5px 20px;
+    background-color: whitesmoke;
+}
+
+.LogoWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+
+}
+
+.LogoWrap h3{
+    color: #00AF07;
+    text-align: center;
+}
+
+.LogoWrap img{
+    width: 50px;
+
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-right: 500px;
+}
+
+.Menu a{
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Menu2{
+    display: none;
+}
+
+.OnboardingButtons{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+
+}
+
+.OnboardingButtons button{
+    padding: 5px 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.OnboardingButtons button:nth-child(2){
+    background-color:#00AF07;
+    ;
+    color: white;
+}
+
+.OnboardingButtons button:hover{
+    background-color: gray;
+}
+
+.OnboardingButtons button:nth-child(2):hover{
+    background-color: green;
+}
+
+.Menu4{
+    display: none;
+}
+
+
+
+@media screen and (max-width:884px) {
+    .Menu{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Header{
+        position: fixed;
+        top: 90vh;
+        bottom: 0;
+        background-color: lightgray;
+        z-index: 99;
+    }
+
+    .LogoWrap h3{
+        display: none;
+    }
+    .Menu1{
+        display: none;
+    }
+    .Menu2{
+        display: block;
+    }
+    .Menu4{
+        display: block;
+    }
+    .Menu3{
+        display: none;
+    }
+    .Menu{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .Menu{
+        gap:20px;
+        margin-left: 40px;
+    }   
+}

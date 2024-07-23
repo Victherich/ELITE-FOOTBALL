@@ -1,0 +1,35 @@
+.Home{
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+
+}
+
+.HomeSideMenuWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+    width:17%;
+    /* background-color: lightgray; */
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HomeSideMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.HomeContent{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    overflow-y: scroll;
+}
