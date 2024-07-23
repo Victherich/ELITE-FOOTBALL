@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.BgLog{
+        width: 100vw;
+        height: 100vh;
+        background-color:white;
+        display: flex;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LogleftSignup{
+    width: 40%;
+    height: 100%;
+    background-color: #14B61A;
+    /* border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    
+  
+    
+}
+
+.LogforballPic{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: aqua; */
+}
+.LogforballPic img{
+    width: 40%;
+    height: 65%;
+}
+
+.LogTextElite{
+    width: 100%;
+    height: 20%;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    /* background-color:palevioletred; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.LogcText{
+    text-align: center;
+    color: white;
+    /* word-spacing: 4px; */
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.LogRightSignup{
+    width: 60%;
+    height: 100%;
+    /* background-color: pink; */
+   
+}
+.LogLogo{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogcircleLogo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #6B6B6B;
+}
+.LogcircleLogo img{
+    width: 30px;
+    height: 30px;
+}
+
+.LogInputContainer{
+    width: 100%;
+    height:85%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.headLog{
+    width: 100%;
+    height: 10%;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogInputContainerWrap{
+    width: 60%;
+    height: 80%;
+    background-color: #FFFFFF;
+    /* background-color: aqua; */
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+  
+    }
+    .forInputContain{
+     width:100%;
+     height:90%;
+     gap: 10px;
+     /* background-color: yellow; */
+      display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    }
+    .forInputLog{
+     width: 90%;
+     height: 20%;
+     gap:5px;
+     display: flex;
+     flex-direction: column;
+     /* background-color: blue; */
+      }
+    .forInputLog input{
+      width: 100%;
+     height: 45px;
+     border: none;
+     /* box-shadow:20px 20px 20px 20px rgba(247, 243, 243, 0.75); */
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 5px;
+    }
+    .forLogButton{
+        width: 90%;
+        height:15%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        /* background-color: aqua; */
+    }
+    .forLogButton button{
+        width: 100%;
+        height: 45px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #158C1A;
+    }
+    .forLogButton p{
+        text-align: center;
+        font-size: 12px;
+    }
+    span{
+        color: #14B61A;
+    }
+    .TSU{
+        font-size: 10px;
+    }

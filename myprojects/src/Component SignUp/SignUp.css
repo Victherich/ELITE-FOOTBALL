@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.forballPic{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    /* background-color: aqua; */
+}
+.forballPic img{
+    width: 40%;
+    height: 65%;
+}
+
+.TextElite{
+    width: 100%;
+    height: 20%;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    /* background-color:palevioletred; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cText{
+    text-align: center;
+    color: white;
+    /* word-spacing: 4px; */
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.leftSignup{
+    width: 40%;
+    height: 100%;
+    background-color: #14B61A;
+}
+.rightSignup{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+ 
+}
+.signupLogo{
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+    display: flex;
+}
+.left{
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+.rightLogo{
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+.circleLogo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #6B6B6B;
+}
+.circleLogo img{
+    width: 30px;
+    height: 30px;
+}
+.inputContainer{
+width: 100%;
+height: 90%;
+gap: 10px;
+background-color: #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.forInput{
+width: 60%;
+height: 15%;
+display: flex;
+gap: 5px;
+flex-direction: column;
+/* background-color: blue; */
+}
+.forInput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    /* box-shadow:20px 20px 20px 20px rgba(247, 243, 243, 0.75); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.forButton{
+    width: 60%;
+    height: 15%;
+    /* background-color: aqua; */
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Tl{
+    font-size: 12px;
+    text-align: center;
+}
+.forButton button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #158C1A;
+}
+
+select{
+     width: 100%;
+     height: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+.thelink{
+    text-decoration: none;
+}
