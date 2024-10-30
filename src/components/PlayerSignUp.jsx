@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { FaHome, FaEye, FaEyeSlash } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import { ClipLoader } from 'react-spinners';
+import { useDispatch } from 'react-redux';
+import { userLogin } from '../Features/Slice';
 
 const Positions = {
   goalKeeper: ["goalKeeper"],
@@ -16,6 +18,7 @@ const Positions = {
 };
 
 const PlayerSignUp = () => {
+  const dispatch=useDispatch()
   const navigate = useNavigate();
   const [mainPosition, setMainPosition] = useState('');
   const [subPosition, setSubPosition] = useState('');
@@ -55,18 +58,25 @@ const PlayerSignUp = () => {
     setLoading(true); // Set loading to true on submit
     
     try {
-      const response = await axios.post('https://elitefootball.onrender.com/register_player', {
+      const response = await axios.post('https://elitefootball.onrender.com/elitefootball/register_player', {
         ...formData,
         position: { [mainPosition]: subPosition },
       });
-
+      console.log(response.data)
       Swal.fire({
         icon: 'success',
-        title: 'Registration Successful',
+        // title: 'Registration Successful',
         text: response.data.message,
+        // timer:2000,
+        showConfirmButton:true,
       });
+      const userInfo = response.data;
+      const userToken = null;
+      dispatch(userLogin({userInfo,userToken}));
       navigate('/verify');
+
     } catch (error) {
+      console.error(error)
       if (error.response && error.response.data) {
         Swal.fire({
           icon: 'error',

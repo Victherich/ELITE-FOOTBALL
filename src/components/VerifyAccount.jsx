@@ -5,10 +5,13 @@ import Swal from 'sweetalert2';
 import "../CSS/SignUpLogin.css";
 import ball from "../Images/ball.png";
 import { FaHome } from 'react-icons/fa';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { userLogin } from '../Features/Slice';
 
 const VerifyAccount = () => {
+  const dispatch = useDispatch()
     const userInfo = useSelector(state=>state.userInfo)
+    console.log(userInfo.id)
   const [otp, setOtp] = useState('');
   const navigate = useNavigate();
 
@@ -19,12 +22,18 @@ const VerifyAccount = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`/verify/${userInfo.id}`, { otp });
+      const response = await axios.post(`https://elitefootball.onrender.com/elitefootball/verify/${userInfo.id}`, { otp });
       Swal.fire({
         icon: 'success',
         title: 'Account Verified',
         text: response.data.message,
-      }).then(() => navigate('/userdashboard'));
+        timer:2000,
+        showConfirmButton:false,
+      });
+      const userInfo = response.data;
+      const userToken = null;
+      dispatch(userLogin({userInfo,userToken}));
+      navigate('/login')
     } catch (error) {
       Swal.fire({
         icon: 'error',
@@ -45,7 +54,7 @@ const VerifyAccount = () => {
   
         Swal.showLoading();
     try {
-      const response = await axios.post(`/resend_otp/${userInfo.id}`);
+      const response = await axios.post(`https://elitefootball.onrender.com/elitefootball/resend_otp/${userInfo.id}`);
       Swal.fire({
         icon: 'success',
         title: 'OTP Resent',
